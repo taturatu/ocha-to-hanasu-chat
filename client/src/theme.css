@@ -1,0 +1,60 @@
+/* M PLUS Rounded 1c — the user's preferred rounded gothic. The @import must
+   stay before the Tailwind import. */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-safe-area";
+
+@theme {
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --text-4xl: 36px;
+  --text-4xl--line-height: 40px;
+  --text-5xl: 48px;
+  --text-5xl--line-height: 52px;
+  --font-rounded: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #eef3ec;
+  --surface: #ffffff;
+  --text: #22301f;
+  --dim: #6d7a68;
+  --border: #d5e0d2;
+  --accent: #4a7c59;
+  --accent-strong: #3c6a4a;
+  --bubble-user: #4a7c59;
+  --bubble-assistant: #ffffff;
+  --radius: 18px;
+  --space-surface: var(--surface);
+  --space-surface-alt: var(--surface);
+  --space-muted: var(--dim);
+  --space-border: var(--border);
+  --space-accent: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101511;
+    --surface: #1d261e;
+    --text: #e8f0e6;
+    --dim: #93a48e;
+    --border: #2c3a2d;
+    --accent: #7fb98e;
+    --accent-strong: #9ccda9;
+    --bubble-user: #3c6a4a;
+    --bubble-assistant: #232e24;
+  }
+}
